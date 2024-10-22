@@ -1,2 +1,4 @@
-training_images/
+data_lvl1_raw/
+data_lvl2_cleaned-clipped/
+data_lvl3_ai-ready/
 .DS_Store
