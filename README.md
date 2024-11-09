@@ -1,6 +1,6 @@
 # MLGEO2024 Mars Fans Project
 
-A project for ESS 469/569 in Autumn 2024 by Trent Thomas and Veronica Fula.
+A project for ESS 469/569 in Autumn 2024 by Trent Thomas (569) and Veronica Fula (469).
 
 ## Overview
 
@@ -8,13 +8,23 @@ This repository contains instructions and code for analyzing images of alluvial 
 
 ## Directory Structure
 
-- `data/`: contains all of the data for this project, classified into `raw`, `clean`, and `AI_ready`. Note that these folders are empty to start because the data is not hosted on github.
-- `notebooks/`: contains all of the jupyter notebooks needed to download, process, and analyze the data for this project, including
+- `data/`: contains all of the data for this project, classified into `raw`, `clean`, and `ai_ready`. The `label` folder includes the geologic map used as validation. Note that the data folders are empty to start because the data is not hosted on github (but the label is).
+- `notebooks_DataAnalysis/`: contains all of the jupyter notebooks needed to download, process, and analyze the data for this project.
+
   - `Download_Data.ipynb`: downloads the raw, clean, or AI ready data.
   - `Data_Cleaning.ipynb`: data pipeline for going from raw to clean data.
   - `Prepare_AI_Ready_Data.ipynb`: data pipeline for going from clean to AI ready data.
   - `EDA.ipynb`: exploratory data analysis.
   - `Dimensionality_Reduction.ipynb`: a sample analysis to demonstrate dimensionality reduction and other simple ML analysis.
+
+- `notebooks_ClassicML/`: contains all of the jupyter notebooks for classic machine learning analysis of the data.
+
+  - `AutoML_Hyperparameter_Tuning.ipynb`: using PyCaret to automatically optimize our machine learning approach.
+  - `Clustering_Analysis.ipynb`: an analysis with several simple clustering algorithms and deep dive into K Means Clustering.
+  - `Computational_Time_Analysis.ipynb`: an analysis of clustering and training time for a variety of different approaches.
+  - `Model_Training_Assessment.ipynb`: a demonstration of reinforcement learning with best practices (although our data is not suited for this approach).
+
+- `notebooks_Research/`: contains jupyter notebooks related to ongoing development of the project.
 
 ## Getting Started
 
@@ -48,7 +58,7 @@ Files: `ctxIMG.tif`, `ctxDEM.tif`, `ctxSLOPE.tif`
 
 Link: https://murray-lab.caltech.edu/CTX/
 
-Link: https://github.com/GALE-Lab/Mars_DEMs 
+Link: https://github.com/GALE-Lab/Mars_DEMs
 
 The Bruce Murray Laboratory for Planetary Visualization created a global mosaic of Mars using grayscale images from the Context Camera (CTX) onboard the Mars Reconnaissance Orbiter (MRO) acquired between 2006 and 2020. A DEM was created from these grayscale images (see link) and then we calculated a slope map.
 
