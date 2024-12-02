@@ -24,6 +24,13 @@ This repository contains instructions and code for analyzing images of alluvial 
   - `Computational_Time_Analysis.ipynb`: an analysis of clustering and training time for a variety of different approaches.
   - `Model_Training_Assessment.ipynb`: a demonstration of reinforcement learning with best practices (although our data is not suited for this approach).
 
+- `notebooks_DeepLearning/`: contains jupyter notebooks for deep learning analysis of the data.
+
+  - `AnalyzeResults_CTX_masked_only.ipynb`: analysis of the deep learning reesults from training on masked CTX images.
+  - `AnalyzeResults_CTX_only.ipynb`: analysis of the deep learning reesults from training on unmasked CTX images.
+  - `Download_Results.ipynb`: downloads the results of the deep learning training and application.
+  - `KMeansCluster_Baseline.ipynb`: K means clustering analysis for comparison to the deep learning analysis.
+
 - `notebooks_Research/`: contains jupyter notebooks related to ongoing development of the project.
 
 ## Getting Started
