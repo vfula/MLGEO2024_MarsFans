@@ -10,4 +10,7 @@ logs.log
 *.shp
 *.shx
 
+*.png
+*.pth
+
 !validation_map.tif
